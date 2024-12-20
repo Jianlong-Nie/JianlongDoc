@@ -8,7 +8,7 @@
 
 目前默认的对应testflight的相关branch是testflight,也就是我们在eas.json里面指定channel之后，eas会自动生成相关的branch与之对应。所以当你运行`eas update --auto`相当于运行了`eas update --branch staging`是一样的，而我们的staging channel其实只是一个基础的channel，testflight和internalgoogle 继承了它而已，打包的时候我们运行的是`eas build --platform ios --auto-submit --non-interactive --no-wait --profile testflight`
 
-![image.png](https://note.youdao.com/yws/res/3/WEBRESOURCE356fdcd2cc4d9b4087bf956d2ec3eea3)]
+![image.png](https://s2.loli.net/2024/12/20/NjrcbuDwmKXfEGJ.png)
 
 当然，如果你觉得这个关联关系不合理，可以进行更改，branch和channel之间的关系，`eas channel:edit` 如视频：
 
