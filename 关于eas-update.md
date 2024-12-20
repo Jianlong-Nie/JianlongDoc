@@ -15,13 +15,18 @@ If you feel that the current connection between branches and channels is not log
 ### Key Points About eas update
 
 Here are some key things to keep in mind when working with eas update:
-	1.	EAS Update is for JS-Only Changes:
+	
+ 1.	EAS Update is for JS-Only Changes:
 EAS Update can only be used for pure JavaScript/TypeScript changes. If you’ve made changes to app.config.ts, do not use eas update.
-	2.	Changes to package.json:
+	
+ 2.	Changes to package.json:
 If you’ve made changes to package.json (such as adding, removing, or updating dependencies), do not use eas update.
-	3.	Changes to Native Configuration:
+	
+ 3.	Changes to Native Configuration:
 Any modifications to native configurations (e.g., Android build.gradle or iOS Info.plist) require a new build. Do not use eas update.
-	4.	Changes to Native Code or Libraries:
+	
+ 4.	Changes to Native Code or Libraries:
 If any native code or libraries (e.g., custom native modules) have been modified, do not use eas update.
-	5.	Ensure versions.json Reflects the App Version:
+	
+ 5.	Ensure versions.json Reflects the App Version:
 After making any of the changes above, you’ll need to increment the` appVersion in versions.json`. This is because the `EAS Update strategy is tied to appVersion`. When you run `eas update`, it only updates the JS bundle for the version of the app matching the appVersion specified in `app.config.ts`.
