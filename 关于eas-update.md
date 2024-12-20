@@ -2,7 +2,7 @@
 
 
 
-首先解释一下为什么你在运行 `eas update --auto` 之后app没有发生更新，请看图:![image.png](https://note.youdao.com/yws/res/4/WEBRESOURCE781e0cee3f3ee15455479382a08f9314)
+首先解释一下为什么你在运行 `eas update --auto` 之后app没有发生更新，请看图:![image.png](https://s2.loli.net/2024/12/20/Ue8YBPr4I5thWFd.png)
 
 因为你是在git上的`staging`分支运行了`eas update --auto` ，`--auto`会默认指定`branch`为当前git的分支为`staging`，然后我们目前并没有相关的`channel`和`staging`分支相关联，![image.png](https://note.youdao.com/yws/res/8/WEBRESOURCEf2349c2d02a5e25d2cdc7092da438928)
 
